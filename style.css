@@ -1,13 +1,13 @@
-/* Page background */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 body {
     background: linear-gradient(to bottom, #b8e6ff, #dff7ff);
-    font-family: "Poppins";
-    margin: 0 ;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
     padding: 30px;
+    color: #333;
 }
 
-/* Main content box */
 .container {
     max-width: 700px;
     margin: auto;
@@ -17,43 +17,30 @@ body {
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-/* Main heading */
 h1 {
     text-align: center;
-    color: darkgreen;
+    color: #1a3d8f;
 }
 
-/* Section headings */
 h2 {
-    color: darkblue;
+    color: #1a3d8f;
 }
 
-/* Paragraphs */
 p {
-    color: #2f5d2f;
+    color: #333;
     font-size: 18px;
     line-height: 1.6;
 }
 
-/* Hobby list */
 ul {
     color: #333;
     font-size: 18px;
 }
 
-/* Image styling */
-img {
-    display: block;
-    margin: 20px auto;
-    border: 10px solid darkblue;
-    border-radius: 25px;
-}
-
-/* Link */
-a {
+a.button {
     display: inline-block;
     margin-top: 20px;
-    background-color: darkgreen;
+    background-color: #1a3d8f;
     color: white;
     padding: 12px 18px;
     border-radius: 8px;
@@ -61,22 +48,8 @@ a {
     transition: 0.3s;
 }
 
-/* Hover effect */
-a:hover {
-    background-color: seagreen;
-    text-decoration: underline;
-}
-
-button{
-  background-color: orange;
-  color: black;
-  padding: 12px 20px;
-  margin: 10px;
-  
-}
-
-button:hover{
-  background-color: white;
+a.button:hover {
+    background-color: #3d63c9;
 }
 
 header {
@@ -90,6 +63,7 @@ nav {
 
 nav a {
     margin: 0 10px;
+    color: #1a3d8f;
 }
 
 section {
@@ -105,17 +79,21 @@ section {
 }
 
 .card h3 {
-    color: darkblue;
+    color: #1a3d8f;
     margin-top: 0;
 }
 
 button {
+    background-color: #1a3d8f;
+    color: white;
     border: none;
     border-radius: 8px;
+    padding: 12px 20px;
+    margin: 10px 0;
     cursor: pointer;
     transition: 0.3s;
 }
 
 button:hover {
-    transform: scale(1.05);
+    background-color: #3d63c9;
 }
