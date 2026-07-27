@@ -1,119 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerald the Giraffe</title>
+  <title>Adithya Kandasamy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <header>
+    <h1>Adithya Kandasamy</h1>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
   <div class="container">
 
-    <header>
-      <h1>Gerald the Giraffe</h1>
-
-      <nav>
-        <a href="#about">About</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#facts">Facts</a>
-      </nav>
-    </header>
-
     <section id="about">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Giraffe_standing.jpg"
-        alt="A giraffe standing outside"
-        width="300"
-      >
+      <h2>About Me</h2>
 
       <p>
-        Gerald is a tall and friendly giraffe who loves eating leaves
-        and exploring the African savanna.
+        Hi! I'm Adithya, a rising 10th grader who enjoys coding, basketball,
+        entrepreneurship, and building new projects. During the summer I've
+        been learning more about HTML, CSS, JavaScript, and APIs while creating
+        websites.
       </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <div class="card">
+        <h3>NASA Photo Explorer</h3>
+        <p>
+          A website that uses NASA's APOD API to display random space images or
+          pictures from a selected date.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>OpenByte</h3>
+        <p>
+          A student nonprofit that helps people learn technology through
+          workshops and community events.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>More Coming Soon!</h3>
+        <p>
+          I'm always working on new coding projects and learning new
+          technologies.
+        </p>
+      </div>
     </section>
 
     <section id="hobbies">
       <h2>My Hobbies</h2>
 
       <ul>
-        <li>Eating acacia leaves</li>
-        <li>Walking around the savanna</li>
-        <li>Hanging out with other giraffes</li>
+        <li>🏀 Playing basketball</li>
+        <li>💻 Coding</li>
+        <li>🎬 Watching movies</li>
+        <li>📚 Learning new technology</li>
       </ul>
+
+      <img
+        src="https://media.istockphoto.com/id/1636022764/photo/basketball-ball.jpg?s=612x612&w=0&k=20&c=NVi1V5dCAZKUHdrhnRq-G5t8XSvZE1YXvgw8NxX3N0I="
+        alt="Basketball"
+        width="300">
     </section>
 
-    <section id="facts">
-      <h2>Where I Live</h2>
+    <section id="contact">
+      <h2>Contact</h2>
 
       <p>
-        Gerald lives in the African savanna. The savanna has open grasslands,
-        tall trees, and many amazing animals.
+        Thanks for visiting my website!
       </p>
 
-      <h2>Interesting Facts</h2>
-
-      <p>
-        Giraffes are the tallest land animals in the world. Their long necks
-        help them reach leaves at the tops of trees.
-      </p>
-
-      <a href="https://kids.nationalgeographic.com/animals/mammals/facts/giraffe" target="_blank">
-        Learn more about giraffes
+      <a class="button" href="https://github.com/git-adit" target="_blank">
+        Visit My GitHub
       </a>
+
+      <br><br>
+
+      <button onclick="showFact()">Random Fact About Me</button>
+
+      <p id="fact">
+        Click the button to learn something about me!
+      </p>
     </section>
-
-    <hr>
-
-    <h2>Feed Gerald</h2>
-
-    <p id="message">
-      Gerald is feeling hungry.
-    </p>
-
-    <button onclick="feedGerald()">
-      Feed Gerald A Leaf
-    </button>
-
-    <hr>
-
-    <h2>Click Counter</h2>
-
-    <p id="clicks">
-      How many clicks can you do?
-    </p>
-
-    <button onclick="clickGerald()">
-      Add another click
-    </button>
-
-    <hr>
-
-    <h2>Gerald's Mood</h2>
-
-    <p id="mood">
-      Gerald is happy!
-    </p>
-
-    <button onclick="sadGerald()">
-      Gerald is sad
-    </button>
-
-    <button onclick="happyGerald()">
-      Gerald is happy!
-    </button>
-
-    <img
-      id="geraldImage"
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJMyZDEl7HnYPKVfQtF6AboVDCcqInNHudB0yQh5DI0Q&s=10"
-      alt="Happy Gerald"
-      width="200"
-    >
 
   </div>
 
   <script src="script.js"></script>
 
 </body>
+
 </html>
