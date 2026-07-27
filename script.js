@@ -1,25 +1,31 @@
 let leaves = 0;
 let clickAmount = 0;
 
-function clickGerald(){
-  clickAmount++;
-  document.getElementById("clicks").textContent = "You clicked " + clickAmount + "time(s)!"
-}
-  
-function feedGerald(){
+const message = document.getElementById("message");
+const clicks = document.getElementById("clicks");
+const mood = document.getElementById("mood");
+const geraldImage = document.getElementById("geraldImage");
+
+function feedGerald() {
   leaves++;
-  document.getElementById("message").textContent = "Gerald has eaten " + leaves + " leaves!"
-
+  message.textContent = "Gerald has eaten " + leaves + " leaf(s)!";
 }
 
-
-
-function sadGerald(){
-  document.getElementById("mood").textContent = "Gerald is sad";
-  geraldImage.src = "https://thumbs.dreamstime.com/b/sad-giraffe-isolated-white-background-emotion-faces-color-sketch-funny-cartoon-emotions-110360579.jpg";
+function clickGerald() {
+  clickAmount++;
+  clicks.textContent = "You clicked " + clickAmount + " time(s)!";
 }
 
-function happyGerald(){
-  document.getElementById("mood").textContent = "Gerald is happy!"
-  geraldImage.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJMyZDEl7HnYPKVfQtF6AboVDCcqInNHudB0yQh5DI0Q&s=10";
+function sadGerald() {
+  mood.textContent = "Gerald is sad.";
+
+  geraldImage.src =
+    "https://thumbs.dreamstime.com/b/sad-giraffe-isolated-white-background-emotion-faces-color-sketch-funny-cartoon-emotions-110360579.jpg";
+}
+
+function happyGerald() {
+  mood.textContent = "Gerald is happy!";
+
+  geraldImage.src =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJMyZDEl7HnYPKVfQtF6AboVDCcqInNHudB0yQh5DI0Q&s=10";
 }

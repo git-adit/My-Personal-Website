@@ -11,84 +11,109 @@
 
   <div class="container">
 
-    <h1> Gerald the Giraffe</h1>
+    <header>
+      <h1>Gerald the Giraffe</h1>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#facts">Facts</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Giraffe_standing.jpg"
+        alt="A giraffe standing outside"
+        width="300"
+      >
+
+      <p>
+        Gerald is a tall and friendly giraffe who loves eating leaves
+        and exploring the African savanna.
+      </p>
+    </section>
+
+    <section id="hobbies">
+      <h2>My Hobbies</h2>
+
+      <ul>
+        <li>Eating acacia leaves</li>
+        <li>Walking around the savanna</li>
+        <li>Hanging out with other giraffes</li>
+      </ul>
+    </section>
+
+    <section id="facts">
+      <h2>Where I Live</h2>
+
+      <p>
+        Gerald lives in the African savanna. The savanna has open grasslands,
+        tall trees, and many amazing animals.
+      </p>
+
+      <h2>Interesting Facts</h2>
+
+      <p>
+        Giraffes are the tallest land animals in the world. Their long necks
+        help them reach leaves at the tops of trees.
+      </p>
+
+      <a href="https://kids.nationalgeographic.com/animals/mammals/facts/giraffe" target="_blank">
+        Learn more about giraffes
+      </a>
+    </section>
+
+    <hr>
+
+    <h2>Feed Gerald</h2>
+
+    <p id="message">
+      Gerald is feeling hungry.
+    </p>
+
+    <button onclick="feedGerald()">
+      Feed Gerald A Leaf
+    </button>
+
+    <hr>
+
+    <h2>Click Counter</h2>
+
+    <p id="clicks">
+      How many clicks can you do?
+    </p>
+
+    <button onclick="clickGerald()">
+      Add another click
+    </button>
+
+    <hr>
+
+    <h2>Gerald's Mood</h2>
+
+    <p id="mood">
+      Gerald is happy!
+    </p>
+
+    <button onclick="sadGerald()">
+      Gerald is sad
+    </button>
+
+    <button onclick="happyGerald()">
+      Gerald is happy!
+    </button>
 
     <img
-      src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Giraffe_standing.jpg"
-      alt="A giraffe standing outside"
-      width="300"
+      id="geraldImage"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJMyZDEl7HnYPKVfQtF6AboVDCcqInNHudB0yQh5DI0Q&s=10"
+      alt="Happy Gerald"
+      width="200"
     >
 
-    <p>
-      Gerald is a tall and friendly giraffe who loves eating leaves
-      and exploring the African savanna.
-    </p>
-
-    <h2>My Hobbies</h2>
-
-    <ul> 
-      <li> Eating acacia leaves</li>
-      <li> Walking around the savanna</li>
-      <li> Hanging out with other giraffes</li>
-    </ul>
-
-    <h2>Where I Live</h2>
-
-    <p>
-      Gerald lives in the African savanna. The savanna has open grasslands,
-      tall trees, and many amazing animals.
-    </p>
-
-    <h2>Interesting Facts</h2>
-
-    <p>
-      Giraffes are the tallest land animals in the world. Their long necks
-      help them reach leaves at the tops of trees.
-    </p>
-
-    <a href="https://kids.nationalgeographic.com/animals/mammals/facts/giraffe" target="_blank"> 
-      Learn more about giraffes
-    </a>
-
-
-  <p id = "message">
-    Gerald is feeling hungry
-  </p>
-  <button onClick= "feedGerald()" > 
-    Feed Gerald A Leaf
-  </button>
-
-  <p id = "clicks">
-    How many clicks can you do?
-  </p>
-
-  <button onClick = "clickGerald()">
-    Add another click
-  </button>
-    
-
-  <p id = "mood">
-    Gerald is happy!
-  </p>
-
-  <button onClick = "sadGerald()">
-    Gerald is sad
-  </button>
-    
-  <button onClick = "happyGerald()">
-    Gerald is happy!
-  </button>
-
-  <img id = "geraldImage"
-    src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJMyZDEl7HnYPKVfQtF6AboVDCcqInNHudB0yQh5DI0Q&s=10" width = "200">
-
-
-
-    
   </div>
 
-  <script src = "script.js" ></script>
-  
+  <script src="script.js"></script>
+
 </body>
-  
 </html>
